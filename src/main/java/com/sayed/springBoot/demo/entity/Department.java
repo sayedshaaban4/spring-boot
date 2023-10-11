@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class department {
+public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentId;
@@ -46,14 +46,14 @@ public class department {
         this.departmentCode = departmentCode;
     }
 
-    public department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+    public Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
         this.departmentAddress = departmentAddress;
         this.departmentCode = departmentCode;
     }
 
-    public department() {
+    public Department() {
     }
 
     @Override
